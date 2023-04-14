@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 3rem;
+            background-color: #04AA6D;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #222;
+        }
+
+        nav a {
+            padding: 1rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content>section {
+            padding: 2rem;
+            border: 1px solid #04AA6D;
+        }
+
+        /*for laptops*/
+        @media screen and (max-width: 1024px) {
+            h1 {
+                color: orange;
+            }
+        }
+
+        /*for tablets*/
+        @media screen and (max-width: 768px) {
+            h1 {
+                color: blue;
+
+            }
+
+            .sports {
+                display: none;
+            }
+        }
+
+        /*for smartphones*/
+        @media screen and (max-width: 480px) {
+            h1 {
+                color: red;
+            }
+
+            .business,
+            .sports {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--header layout-->
+    <header>
+        <!--main text-->
+
+        <h1>Online Magazine</h1>
+
+        <!--navbar-->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!--content-->
+    <main>
+        <div class="content">
+
+            <section class="lifestyle">
+                <h2>Lifestyle</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis cupiditate ullam aliquid
+                    corrupti nulla ratione sed quam repudiandae obcaecati. Aspernatur, excepturi unde? Cum magnam totam
+                    aliquam vero sint labore.</p>
+            </section>
+
+            <section class="business">
+                <h2>Business</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis cupiditate ullam aliquid
+                    corrupti nulla ratione sed quam repudiandae obcaecati. Aspernatur, excepturi unde? Cum magnam totam
+                    aliquam vero sint labore.</p>
+            </section>
+
+            <section class="sports">
+                <h2>Sports</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis cupiditate ullam aliquid
+                    corrupti nulla ratione sed quam repudiandae obcaecati. Aspernatur, excepturi unde? Cum magnam totam
+                    aliquam vero sint labore.</p>
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>
